@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupaScribble.API.Net50", "SupaScribble.API.Net50.csproj", "{24DA0A03-4808-44BD-99A4-1F48450441C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B083DFC0-BFF3-48D1-8832-426AC859C64F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versions", "Versions", "{0790D14F-DC2E-45E1-9AAA-62A37FB0C5F3}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SupaScribble.API.Shared", "..\SupaScribble.API.Shared\SupaScribble.API.Shared.shproj", "{6951C471-601A-4A44-B5BB-44A94CE7F3A3}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\SupaScribble.API.Shared\SupaScribble.API.Shared.projitems*{24da0a03-4808-44bd-99a4-1f48450441c5}*SharedItemsImports = 5
+		..\SupaScribble.API.Shared\SupaScribble.API.Shared.projitems*{6951c471-601a-4a44-b5bb-44a94ce7f3a3}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24DA0A03-4808-44BD-99A4-1F48450441C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DA0A03-4808-44BD-99A4-1F48450441C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DA0A03-4808-44BD-99A4-1F48450441C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DA0A03-4808-44BD-99A4-1F48450441C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24DA0A03-4808-44BD-99A4-1F48450441C5} = {0790D14F-DC2E-45E1-9AAA-62A37FB0C5F3}
+		{6951C471-601A-4A44-B5BB-44A94CE7F3A3} = {B083DFC0-BFF3-48D1-8832-426AC859C64F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1D3414C-668E-41B5-ACF1-4A78784BF6B3}
+	EndGlobalSection
+EndGlobal
