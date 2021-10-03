@@ -9,12 +9,23 @@ namespace SupaScribble.API
 {
     public sealed class Startup
     {
+        #region Properties
+        /// <summary>
+        ///     
+        /// </summary>
+        public IConfiguration Configuration { get; }
+        #endregion
+
+        #region Constructors
+        /// <summary>
+        ///     
+        /// </summary>
+        /// <param name="configuration">The DI configuration object.</param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
+        } 
+        #endregion
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -24,6 +35,17 @@ namespace SupaScribble.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SupaScribble.API", Version = "v1" });
             });
+
+            services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
+            {
+                builder
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials()
+                .WithOrigins("http://localhost:4200");
+            }));
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
