@@ -1,4 +1,4 @@
-# supascribble
+# supadraw
 A skribbl.io clone powered by supabase.
 
 ---
