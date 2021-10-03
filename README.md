@@ -17,13 +17,17 @@ Read the `CONTRIBUTION.md` file for more information.
 
 ## Technologies
 - **ASP.NET Core**
-  - A web framework for developing backend APIs. Important for session and data persistence. 
+  - A web framework for developing backend APIs. Important for session and data persistence.
+  - [Website](https://asp.net/)
 - **Angular**
-  - A TypeScript powered SPA framework.
+  - A TypeScript powered single-page framework.
+  - [Website](https://angular.io/)
 - **Supabase**
   - A database backend alternative to Firebase. 
+  - [Website](https://supabase.io/)
 - **Docker**
   - A containerization daemon.
+  - [Website](https://docker.io/)
 
 ## Languages
 - C#
