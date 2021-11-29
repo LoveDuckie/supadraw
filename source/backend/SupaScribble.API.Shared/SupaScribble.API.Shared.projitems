@@ -10,10 +10,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Controllers\AuthController.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Controllers\WeatherForecastController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\RoomsController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Program.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Startup.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)WeatherForecast.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory).dockerignore" />
@@ -35,5 +34,9 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Rooms\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Users\" />
   </ItemGroup>
 </Project>
